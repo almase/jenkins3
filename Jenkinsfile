@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'apt updte'
+                sh 'apt update'
 		sh 'apt upgrade'
 		sh 'apt install sudo'
 		sh 'udo chown -R 987:980 "/.npm"'
