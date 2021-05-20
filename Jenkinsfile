@@ -8,8 +8,11 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-		sh 'npm  cache clean --force'
-                sh 'npm install cowsay@1.2.0' 
+                sh 'apt updte'
+		sh 'apt upgrade'
+		sh 'apt install sudo'
+		sh 'udo chown -R 987:980 "/.npm"'
+                sh 'npm install ' 
             }
         }
     }
