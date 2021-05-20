@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'almase/ubuntu_jenkins:v1'' 
+            image 'almase/ubuntu_jenkins:v1' 
             args '-p 3000:3000' 
         }
     }
